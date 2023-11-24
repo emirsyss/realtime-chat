@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <title>Real-Time Chat PHP</title>
+</head>
+<body>
+    <div id="container">
+        <div id="title">
+            <h2>emirits real-time chat</h2>
+        </div>
+            <input type="email" name="email" id="email" placeholder="E-posta adresiniz">
+            <input type="password" name="parola" id="parola" placeholder="Parolanız">
+            <button onclick="login()" type="submit">Giriş Yap</button>
+        <div id="zatenyokmu">
+            <label for="">Hesabın yok mu? <span><a href="register.html">Kayıt Ol</a></span></label>
+
+        </div>
+
+    </div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            padding: 5px;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #container {
+            width: 25%;
+            border-radius: 4px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+        }
+        #zatenyokmu {
+            color: white;
+            padding: 7px;
+            text-align: center;
+            background-color: rgb(83, 115, 255);
+        }
+        a {
+            text-decoration: none;
+            color: rgb(162, 213, 255);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        #title {
+            background-color: rgb(83, 115, 255);
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        input {
+            border: none;
+            border-bottom: 1px solid black;
+            outline: none;
+            font-size: 16px;
+            height: 35px;
+            padding: 5px;
+
+        }
+        button {
+            width: 100%;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            height: 35px;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+        button:hover {
+            background-color: rgb(83, 115, 255);
+            color: white;
+        }
+
+        @media screen and (max-width: 768px) {
+            #container {
+                width: 90%;
+            }
+        }
+    </style>
+    <script>
+        function login() {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("parola").value;
+
+        var data = {
+            email: email,
+            password: password,
+        };
+        $.ajax({
+            type: "POST",
+            url: "/loginpost?email=" + email + "&password=" + password,
+            data: data,
+            success: function(data) {
+                if (data.success == true) {
+                    alert(data.message);
+                    window.location.href = "/chat";
+                } else {
+                    alert(data.message);
+                }
+            }
+        });
+        }
+    </script>
+</body>
+</html>

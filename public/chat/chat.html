@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js" integrity="sha512-zoJXRvW2gC8Z0Xo3lBbao5+AS3g6YWr5ztKqaicua11xHo+AvE1b0lT9ODgrHTmNUxeCw0Ry4BGRYZfXu70weg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Real-Time Chat</title>
+</head>
+<body>
+    <div id="container">
+        <div id="title">
+            <h2>emirits real-time chat</h2>
+        </div>
+        <div id="allmessages">
+                <p></p>
+        </div>
+      
+   
+            <input type="text" id="yourmessage"  autocomplete="off" placeholder="Mesajınız">
+        
+                <button type="button" id="sendBtn">
+                    <i class="fa-solid fa-paper-plane"> </i>
+                    Mesaj Gönder</button>
+           
+            
+        
+
+    </div>
+    <script src="chatsocket/chat.js"></script>
+</body>
+</html>

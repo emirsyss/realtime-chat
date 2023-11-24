@@ -1,0 +1,163 @@
+@import url("../../fonts/poppins/fonts.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(5, 5, 5);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container {
+    width: 50%;
+    border-radius: 4px;
+
+    display: flex;
+    flex-direction: column;
+    box-shadow: -1px -1px 40px 5px rgb(75, 101, 215);
+
+}
+#title {
+    background-color: rgb(75, 101, 215);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+h1 {
+    font-family: "poppinsextrabold";
+}
+h2 {
+    font-family: "poppinsbold";
+}
+label {
+    font-family: "poppinslight";
+
+}
+p {
+    font-family: "poppinslight";
+    color: white;
+}
+textarea {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    height: 350px;
+    padding: 5px;
+    resize: none;
+
+}
+input {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-top: 1px solid rgb(124, 124, 124);;
+
+    border-bottom: 1px solid rgb(124, 124, 124);
+    outline: none;
+    font-size: 16px;
+    height: 45px;
+    padding: 5px 15px;
+    color: white;
+}
+input:focus {
+    border-color: rgb(75, 101, 215);
+}
+button {
+    width: 100%;
+    font-size: 18px;
+    
+    border: none;
+    outline: none;
+    height: 45px;
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: rgb(75, 101, 215);
+    color: white;
+}
+button i {
+    margin-right: 5px;
+}
+#allmessages {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 15px 10px 15px;
+    display: flex;
+    height: 500px;
+    overflow-x: auto;
+    font-size: 19px;
+    font-weight: bold;
+    max-width: 100%;
+    background-color: black;
+}
+#allmessages::-webkit-scrollbar{
+    background-color: rgb(15, 15, 15);
+    width: 6px;
+}
+#allmessages::-webkit-scrollbar-thumb {
+    background-color: rgb(83, 115, 255);
+    border-radius: 6px;
+}
+#sender {
+    color: rgb(83, 115, 255);
+    max-width: 50%; 
+}
+span {
+    color: rgb(83, 115, 255);
+    font-family: "poppinsbold";
+    font-size: 21px;
+    margin-right: 10px;
+}
+
+#fullMessageDiv{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgba(58, 70, 125, 0.3);
+    width: max-content;
+    max-width: 100%;
+    display: flex;
+    gap: 10px;
+}
+#avatarDiv {
+    margin-top: 5px;
+}
+#messageDiv {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+#datemessage {
+    color: rgb(168, 168, 168);
+    font-size: 15px;
+    font-family: "poppinslight";
+}
+
+#allmessages img {
+    width: 40px;
+}
+#allmessages p {
+    word-break: break-all;
+    font-family: "poppinsextralight";
+    font-size: 19px;
+}
+@media screen and (max-width: 1360px) {
+    #container {
+        width: 67%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    #container {
+        width: 75%;
+    }
+}
+@media screen and (max-width: 768px) {
+    #container {
+        width: 90%;
+    }
+}

@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "poppinsblack";
+    src: url("Poppins-Black.ttf") format('truetype');
+}
+@font-face {
+    font-family: "poppinsblackitalic";
+    src: url("Poppins-BlackItalic.ttf") format('truetype');
+}
+@font-face {
+    font-family: "poppinsbold";
+    src: url("Poppins-Bold.ttf") format('truetype');
+}
+@font-face {
+    font-family: "poppinsbolditalic";
+    src: url("Poppins-BoldItalic.ttf") format('truetype');
+}
+@font-face {
+    font-family: "poppinsextrabold";
+    src: url("Poppins-ExtraBold.ttf") format('truetype');
+}
+@font-face {
+    font-family: "poppinsextrabolditalic";
+    src: url("Poppins-ExtraBoldItalic.ttf") format('truetype');
+}
+@font-face {
+    font-family: "poppinsextralight";
+    src: url("Poppins-ExtraLight.ttf") format('truetype');
+}
+@font-face {
+    font-family: "poppinsextralightitalic";
+    src: url("Poppins-ExtraLightItalic.ttf") format('truetype');
+}
+@font-face {
+    font-family: "poppinsitalic";
+    src: url("Poppins-Italic.ttf") format('truetype');
+}
+@font-face {
+    font-family: "poppinslight";
+    src: url("Poppins-Light.ttf") format('truetype');
+}
+@font-face {
+    font-family: "poppinslightitalic";
+    src: url("Poppins-LightItalic.ttf") format('truetype');
+}
+@font-face {
+    font-family: "poppinsmedium";
+    src: url("Poppins-Medium.ttf") format('truetype');
+}
+@font-face {
+    font-family: "poppinsmediumitalic";
+    src: url("Poppins-MediumItalic.ttf") format('truetype');
+}
+@font-face {
+    font-family: "poppinsregular";
+    src: url("Poppins-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: "poppinssemibold";
+    src: url("Poppins-SemiBold.ttf") format('truetype');
+}
+@font-face {
+    font-family: "poppinssemibolditalic";
+    src: url("Poppins-SemiBoldItalic.ttf") format('truetype');
+}
+@font-face {
+    font-family: "poppinsthin";
+    src: url("Poppins-Thin.ttf") format('truetype');
+}
+@font-face {
+    font-family: "poppinsthinitalic";
+    src: url("Poppins-ThinItalic.ttf") format('truetype');
+}
