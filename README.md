@@ -1,4 +1,4 @@
-# realtime-chat
+# NODEJS REAL-TIME CHAT
 Realtime Chat Nodejs &amp; MySql (My First socket.io project)
 
 ## Npm Installs
